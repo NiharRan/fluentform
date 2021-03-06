@@ -4,7 +4,7 @@ Tags: contact form, contact forms, wp forms, forms, form builder, contact form b
 Requires at least: 4.5
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 3.6.66
+Stable tag: 3.6.68
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -322,7 +322,12 @@ The entire source code is <a href="https://github.com/fluentform/fluentform">ava
 
 == Changelog ==
 
-= 3.6.66 (Date: Mar 05, 2021) =
+= 3.6.68 (Date: Mar 06, 2021) =
+* PHP 8 deprecated issue fixed
+* Export and Import Form/Entries Nonce issue fixed
+* Add Date range selection on entries chart
+
+= 3.6.67 (Date: Mar 05, 2021) =
 * Refactored VueJS build system, Form editor is now 40% faster.
 * Added Hooks for Smart Codes
 * MailChimp Integration Issue fixed
