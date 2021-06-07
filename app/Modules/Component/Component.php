@@ -793,7 +793,6 @@ class Component
 
         if ($time < $start) {
             $isRenderable['message'] = $restrictions['pendingMsg'];
-
             return false;
         }
 
@@ -804,11 +803,10 @@ class Component
         }
     
         $weekDayToday     =  date("l") ;   //day of the week
-        $selectedWeekDays = ArrayHelper::get ($restrictions,'selectedDays',[]);
-    
-        if( ! in_array ($weekDayToday,$selectedWeekDays) && defined('FLUENTFORMPRO')){
+        $selectedWeekDays = ArrayHelper::get ($restrictions,'selectedDays');
+        //skip if it was not set initially and $selectedWeekDays is null
+        if( $selectedWeekDays && is_array($selectedWeekDays) && ! in_array ($weekDayToday,$selectedWeekDays)){
             $isRenderable['message'] = $restrictions['expiredMsg'];
-        
             return false;
         }
 
