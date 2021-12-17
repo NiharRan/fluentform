@@ -122,6 +122,7 @@ import GeneralIntegration from './components/settings/GeneralIntegration/Integra
 import EditGeneralIntegration from './components/settings/GeneralIntegration/IntegrationEditor.vue';
 import PdfFeeds from './components/settings/PdfFeeds.vue';
 import PaymentSettings from './components/settings/PaymentSettings';
+import FrontEndEditForm from "./components/settings/FrontEndEditForm";
 const routes = [
     {
         path: '*',
@@ -187,6 +188,11 @@ const routes = [
         path: '/landing_pages',
         name: 'landing_pages',
         component: LandingPages
+    },
+    {
+        path: '/front_end_edit',
+        name: 'front_end_edit',
+        component: FrontEndEditForm
     }
 ];
 
